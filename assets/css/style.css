@@ -1,0 +1,46 @@
+ .timer    {
+    background-color: brown;
+    border: black solid 3px;
+}
+
+
+.heading    {
+    border: black solid 3px;
+    text-align: center
+}
+
+
+.timer    {
+    border: black solid 3px;
+}
+
+.startButton {
+
+    text-align: center;
+}
+
+
+
+
+.questionBox {
+    height: 50px;
+    border: black solid 3px;
+}
+
+.answerBox {
+    border: black solid 3px;
+   
+
+}
+
+.leaderBrd {
+    border: black solid 3px;
+}
+
+
+
+
+body {
+    background-color: bisque;
+}
+

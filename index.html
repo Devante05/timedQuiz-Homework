@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drizzy Quizzy</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <p class="timer" id="timer">00:00</p>
+
+    <main>
+      <h1 class="heading" id="heading">TEST YOUR KNOWLEDGE!</h1>
+      <p id="paragraph">EVERY INCORRECT ANSWER WILL TAKE AWAY 10 SECONDS</p>
+
+      <button class="startButton" id="startButton">START!</button>
+
+      <div class="questionBox" id="questionBox">
+        <p id="currentQuestion"></p>
+      </div>
+
+      <div class="answerBox" id="answerBox"></div>
+    </main>
+    <div class="leaderBrd" id="leaderBrd">
+      <h2>LEADERBOARD</h2>
+
+      <form class="formContainer" id="formContainer">
+        <input type="text" placeholder="Name" />
+        <button class="leadSumbit" id="leadSumbit">Submit</button>
+      </form>
+
+      <ol class="leadNames" id="leadNames"></ol>
+    </div>
+
+    <div id="demo"></div>
+    <div id="options"></div>
+    <button id="demoBtn">Next</button>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
