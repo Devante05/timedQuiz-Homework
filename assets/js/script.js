@@ -88,6 +88,38 @@ function displayQuestion() {
       answersDiv.appendChild(option);
     }}
 
+    
+    function startButtonClicked(e) {
+        console.log(e.target)
+        
+        var fiveMinutes = 15 * 5,
+          display = document.getElementById("timer");
+        startTimer(fiveMinutes, display);
+        displayQuestion();}
+
+        var time = document.getElementById("timer");
+        time.addEventListener('click', startButtonClicked);
+
+function startTimer(duration, display) {
+  timer = duration;
+  var minutes;
+  var seconds;
+  timerInterval = setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    display.textContent = minutes + ':' + seconds;
+
+    if (--timer < 0) {
+      // timer = duration;
+    }
+  }, 1000);
+}
+window.onload = function () {};
+
   //   demoDiv.textContent = questionsBank[index].question;
   //   optionsDiv.innerHTML = "";
 
